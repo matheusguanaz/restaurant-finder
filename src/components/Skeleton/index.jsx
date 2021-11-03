@@ -19,5 +19,7 @@ const LoadingSkeleton = styled.div`
     animation: ${KeyFrameLoading} 500ms infinite alternate;
 `;
 
-export default ({width, height}) => <LoadingSkeleton width={width} height={height}/>;
+const Skeleton = ({width, height}) => <LoadingSkeleton width={width} height={height}/>;
+
+export default Skeleton;
 

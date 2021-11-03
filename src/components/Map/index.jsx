@@ -13,12 +13,14 @@ export const MapContainer = (props) => {
         if(query){
             searchByQuery(query);
         }
+        // eslint-disable-next-line
     }, [query]);
 
     useEffect(() => {
         if(placeId){
             getRestaurantById(placeId)
         }
+        // eslint-disable-next-line
     }, [placeId]);
 
     function getRestaurantById(placeId){
